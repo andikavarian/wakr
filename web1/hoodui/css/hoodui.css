@@ -1,0 +1,144 @@
+html {
+	position: relative;
+}
+
+body {
+	color: #eee;
+	font-family: Arial;
+	font-size: 10px;
+}
+
+.container {
+	background: #1c2020;
+	width: 204px;
+	height: 340px;
+	overflow: hidden;
+}
+
+.topbar {
+	width: 100%;
+	height: 8%;
+	border-bottom: 1px solid #333;
+	position: relative;
+}
+
+.logo {
+	background: url('../images/hoodemia.png') no-repeat no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	width: 50%;
+	height: 75%;
+	margin: 3px 0 3px 5px;
+}
+
+#menu {
+	border-bottom: 1px solid #1BC9E0;
+	float: left;
+	width: 100%;
+	height: 26px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	display: inline;
+	background: #222 url(../../images/overlay.png) repeat-x;
+}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	/* margin-top: 5px; */
+	float: left;
+	width: 1000%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+	
+}
+#menu ul li{
+	list-style: none;
+	float: left;
+	margin: 5px 20px;
+}
+#menu ul li a{
+	color: #ccc;
+	text-decoration: none;
+	padding: 4px 10px;
+	font-size: 11px;
+}
+#menu ul li.active a{
+	border-bottom: 3px solid #1BC9E0;
+	font-weight: bold;
+}
+
+#content {
+	float: left;
+	width: 400%;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+}
+
+.contentplace {
+	width: 25%;
+	float: left;
+	margin: 0;
+}
+
+.item {
+	background-color: #363636;
+	width: 90%;
+	margin: 5px auto;
+	padding: 5px;
+	height: 15%;
+}
+.item:hover {
+	background-color: #333;
+	cursor: pointer;
+}
+
+.info {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.icon {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.icon img {
+	width: 100%;
+	height: 100%;
+}
+
+.name {
+	display: inline-block;
+	float: right;
+	width: 75%;
+	margin-top: 8px;
+}
+
+#search {
+	float: right;
+	height: 100%;
+	width: 15%;
+	border-left: 1px solid #333;
+}
+
+#search img {
+	width: 100%;
+	height: 100%;
+}
+
+#detail {
+	display: none;
+}
+
